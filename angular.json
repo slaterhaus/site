@@ -5,5 +5,18 @@
     "site": "apps/site",
     "site-e2e": "apps/site-e2e",
     "tricks": "libs/tricks"
+  },
+  "storybook": {
+    "builder": "@storybook/angular:start-storybook",
+    "options": {
+      "browserTarget": "angular-cli:build",
+      "port": 6006
+    }
+  },
+  "build-storybook": {
+    "builder": "@storybook/angular:build-storybook",
+    "options": {
+      "browserTarget": "angular-cli:build"
+    }
   }
 }
